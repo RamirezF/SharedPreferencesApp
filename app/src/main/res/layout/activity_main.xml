@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/black"
+        android:textSize="48sp"
+        android:text="Bienvenido"/>
+    <TextView
+        android:id="@+id/fullname_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/welcome_message"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"
+        android:text="Elmer Curio"/>
+
+    <Button
+        android:layout_marginTop="25dp"
+        android:id="@+id/encuestra_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullname_text"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_alignParentEnd="true"
+        android:text="Encuesta" />
+
+</RelativeLayout>
